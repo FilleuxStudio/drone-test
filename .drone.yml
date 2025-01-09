@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: hello-world-pipeline
+
+steps:
+  - name: hello-world
+    image: alpine:latest
+    commands:
+      - echo "Hello, World!"
